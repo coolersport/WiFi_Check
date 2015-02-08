@@ -9,3 +9,13 @@ than one at a time.  If lockfile is old, it removes it
 
 For more info:  
 http://rpi.tnet.com/project/scripts/wifi_check
+
+This forked version contains the following enhancements:
+
+- change all `echo` statements to `logger` to avoid "(CRON) info (No MTA installed, discarding output)" error in crontab
+
+For some reason, using `crontab -e` command doesn't work. You may need to edit `/etc/crontab` and insert the following line:
+
+```bash
+*/5 * * * * root /opt/wificheck >/dev/null 2>&1
+```
