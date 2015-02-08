@@ -14,7 +14,7 @@ http://rpi.tnet.com/project/scripts/wifi_check
 
 This forked version contains the following enhancements:
 
-- change all `echo` statements to `logger` to avoid "(CRON) info (No MTA installed, discarding output)" error in crontab
+- change all `echo` statements to `logger` to avoid "_(CRON) info (No MTA installed, discarding output)_" error in crontab
 
 ### Others
 
